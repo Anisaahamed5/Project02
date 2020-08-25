@@ -1,5 +1,5 @@
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% "Ubuntu";
   color: white;
   background-color: black;
 }
@@ -19,7 +19,7 @@ body {
   margin-left: 30px;
   margin-right: 30px;
   display: inline-grid;
-  display: grid;
+  grid-template-columns: repeat(4);
   grid-column-gap: 20px;
   grid-row-gap: 10px;
   display: flex;
@@ -27,8 +27,16 @@ body {
   flex-flow: wrap;
   justify-content: center;
   flex-direction: row;
-  align-content: center;
   align-content: space-between;
+}
+
+@media screen and (min-width: 400px) {
+  #gifcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
