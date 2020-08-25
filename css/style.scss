@@ -8,6 +8,11 @@ body {
   background-color: black;
 }
 
+.btn.btn-primary {
+  align-self: flex-end;
+
+}
+
 .gif > img {
   max-width: 200px;
   max-height: 120px;
