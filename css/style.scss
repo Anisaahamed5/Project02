@@ -8,6 +8,7 @@ body {
 
 .gif > img {
   max-width: 100%;
+  max-height: 40px;
 }
   
 #gifcontainer {
@@ -15,7 +16,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-content: center;
 }
