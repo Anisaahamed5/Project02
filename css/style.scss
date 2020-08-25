@@ -5,3 +5,15 @@ body {
   font: 100% $font-stack;
   color: $primary-color;
 }
+
+.gif > img {
+  max-width: 100%;
+}
+  
+#gifcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+}
+

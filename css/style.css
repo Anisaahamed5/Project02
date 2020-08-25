@@ -3,4 +3,15 @@ body {
   color: #444;
 }
 
+.gif > img {
+  max-width: 100%;
+}
+
+#gifcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */

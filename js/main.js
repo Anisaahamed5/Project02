@@ -4,7 +4,7 @@ $(document).on("submit", "#searchform", function(e) {
     let search = $("#gifsearch").val();
     let num = $("#numberofgifs").val();
     
-    alert("Hello World " + search + " " + num )
+    // alert("Hello World " + search + " " + num )
     
     $.get( 
         "https://api.giphy.com/v1/gifs/search",
@@ -14,7 +14,10 @@ $(document).on("submit", "#searchform", function(e) {
             limit: num,
         }, 
         function(ret) {
-            console.log(ret)
+            ret.data.forEach(function (item, index) {
+                console.log(item);
+                $("#gifcontainer").append("<div class=\"gif\"> <img src=\"" + item.images.original.url + "\"></div>")
+            });
         }
 
     )
