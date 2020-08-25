@@ -1,5 +1,6 @@
 $(document).on("submit", "#searchform", function(e) {
     e.preventDefault();
+    $("#gifcontainer").empty();
 
     let search = $("#gifsearch").val();
     let num = $("#numberofgifs").val();
@@ -21,7 +22,5 @@ $(document).on("submit", "#searchform", function(e) {
         }
 
     )
-    $("button").click(function(){
-        $("div").empty();
-      });
+    
 });
