@@ -9,8 +9,7 @@ body {
 }
 
 .gif > img {
-  max-width: 200px;
-  max-height: 120px;
+  max-width: 100%;
 }
 
 #gifcontainer {
@@ -18,24 +17,20 @@ body {
   padding-bottom: 15px;
   margin-left: 30px;
   margin-right: 30px;
-  display: inline-grid;
-  grid-template-columns: repeat(4);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 10px;
+}
+#gifcontainer .gif {
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: wrap;
+  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  align-content: space-between;
 }
 
-@media screen and (min-width: 400px) {
+@media (max-width: 320px) {
   #gifcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
 }
 
