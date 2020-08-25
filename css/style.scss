@@ -35,8 +35,27 @@ body {
   }
 }
 
+#searchform .row {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 320px) {
   #gifcontainer {
-    grid-template-columns: 1fr;      
+    grid-template-columns: 1fr;  
+  }
+
+  #searchform .row {
+    flex-direction: column;
+
+    > * {
+      width: 100%;
+      padding: 15px;
+    }
+
+    button {
+      width: 100%;
+    }
   }
 }
+

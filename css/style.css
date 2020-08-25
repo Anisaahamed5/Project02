@@ -28,9 +28,25 @@ body {
   justify-content: center;
 }
 
+#searchform .row {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 320px) {
   #gifcontainer {
     grid-template-columns: 1fr;
+  }
+
+  #searchform .row {
+    flex-direction: column;
+  }
+  #searchform .row > * {
+    width: 100%;
+    padding: 15px;
+  }
+  #searchform .row button {
+    width: 100%;
   }
 }
 
