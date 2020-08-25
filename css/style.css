@@ -8,10 +8,11 @@ body {
 }
 
 #gifcontainer {
+  padding-top: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
-  align-content: space-between;
+  align-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
