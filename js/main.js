@@ -21,4 +21,7 @@ $(document).on("submit", "#searchform", function(e) {
         }
 
     )
+    $("button").click(function(){
+        $("div").empty();
+      });
 });
