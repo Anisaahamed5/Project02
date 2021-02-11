@@ -1,5 +1,5 @@
 # Project02
-Second Project for Quickstart
+Website with Search Engine
 
 ## Name
 
